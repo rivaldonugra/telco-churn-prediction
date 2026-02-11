@@ -1,30 +1,29 @@
-# Telco Churn Prediction
-Created by Rivaldo Nugradwiyanto
+## Telco Churn Prediction
+## Background
 
-## Latar Belakang
-
-Industri telekomunikasi memiliki tingkat persaingan yang tinggi sehingga churn pelanggan menjadi tantangan utama. Pelanggan dapat dengan mudah berpindah penyedia layanan akibat faktor harga, kontrak, maupun kualitas layanan. Oleh karena itu, perusahaan perlu memahami karakteristik pelanggan yang berpotensi churn agar dapat menerapkan strategi retensi yang tepat dan efektif.
+The telecommunications industry is highly competitive, making customer churn a major challenge. Customers can easily switch providers due to factors such as pricing, contract terms, or service quality. Therefore, companies need to understand the characteristics of customers who are likely to churn so they can implement effective and targeted retention strategies.
 
 ## Dataset
 
-Dataset Telco Customer Churn berisi informasi demografis pelanggan, jenis layanan yang digunakan, detail kontrak, dan metode pembayaran. Target variabel adalah status churn pelanggan (0: Tidak Churn, 1: Churn).
+The Telco Customer Churn dataset contains information about customer demographics, services used, contract details, and payment methods. The target variable is customer churn status (0: Not Churn, 1: Churn).
 
 ### Attribute Information
 
-| Attribute | Data Type | Description |
-| --- | --- | --- |
-| Dependents | object | customer mempunyai tanggungan atau tidak |
-| tenure | int | total sudah berapa bulan pelanggan berlangganan |
-| OnlineSecurity | object | memiliki layanan online security atau tidak |
-| OnlineBackup | object | memiliki layanan online backup atau tidak |
-| InternetService | object | jenis layanan internet yang digunakan |
-| DeviceProtection | object | memiliki layanan device protection atau tidak |
-| TechSupport | object | memiliki layanan tech support atau tidak |
-| Contract | object | jenis kontrak berdasarkan durasi |
-| PaperlessBilling | object | apakah pelanggan menggunakan tagihan paperless |
-| MonthlyCharges | float | jumlah biaya langganan setiap bulan |
-| Churn | object | apakah pelanggan berhenti berlangganan atau tidak |
+| Attribute        | Data Type | Description                                         |
+| ---------------- | --------- | --------------------------------------------------- |
+| Dependents       | object    | Whether the customer has dependents                 |
+| tenure           | int       | Total number of months the customer has subscribed  |
+| OnlineSecurity   | object    | Whether the customer has online security service    |
+| OnlineBackup     | object    | Whether the customer has online backup service      |
+| InternetService  | object    | Type of internet service used                       |
+| DeviceProtection | object    | Whether the customer has device protection service  |
+| TechSupport      | object    | Whether the customer has tech support service       |
+| Contract         | object    | Type of contract based on duration                  |
+| PaperlessBilling | object    | Whether the customer uses paperless billing         |
+| MonthlyCharges   | float     | Monthly subscription fee                            |
+| Churn            | object    | Whether the customer has stopped subscribing or not |
 
-## Proses Analisis
+## Analysis Process
 
-Analisis dilakukan melalui EDA untuk memahami pola churn, dilanjutkan dengan preprocessing data dan pengembangan model klasifikasi. Evaluasi model memprioritaskan recall untuk meminimalkan pelanggan churn yang tidak terdeteksi, serta penyimpanan model ke dalam format pickle untuk penggunaan selanjutnya.
+The analysis begins with EDA to understand churn patterns, followed by data preprocessing and classification model development. Model evaluation prioritizes recall to minimize undetected churn customers. The final model is saved in pickle format for future use.
+
